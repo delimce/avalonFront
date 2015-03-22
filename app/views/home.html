@@ -1,0 +1,28 @@
+<div class="row" data-ng-controller="homeController as vm">
+
+    <div ng-init="vm.tittle1Efect()" id="tittle1" class="big_tittle">
+        <p>{{ vm.tittle1 }}</p>
+    </div>
+
+    <section  class="col-xs-11 col-md-7" ng-init="tab=1">
+        <ul style="font-weight: bold;" class="nav nav-tabs">
+            <li role="presentation"><a href ng-click="tab = 1">Minimalist</a></li>
+            <li role="presentation"><a href ng-click="tab = 2">Handy</a></li>
+            <li role="presentation"><a href ng-click="tab = 3">Powerful</a></li>
+            <li role="presentation"><a href ng-click="tab = 4">Scalable</a></li>
+        </ul>
+
+
+        <div class="panel" ng-show="tab===1" >
+            Very tiny presentation, with few files to configure for rapid development of web applications,
+            minimal learning curve, simple directory structure totally based in MVC model,
+            leave us the hard work and just focus in your own php code!!
+        </div>
+
+        <div class="panel" ng-show="tab===2" >
+            Class for all you need,
+        </div>
+
+    </section>
+
+</div>
