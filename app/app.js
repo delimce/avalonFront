@@ -21,15 +21,24 @@ define(['angular', 'ngRoute', 'ngBootstrap', 'velocity', 'services/routeResolver
 
         routeResolverProvider.routeConfig.setBaseDirectories('app/views/', 'app/controllers/');
 
+
+        /**
+         * config routes for app
+         * @type {routeResolver.route|*}
+         */
         var route = routeResolverProvider.route;
 
         $routeProvider
             .when('/', route.resolve('home'))
-            .when('/page1', route.resolve('page1'))
+            .when('/release', route.resolve('release'))
             .when('/page2', route.resolve('page2'))
             .when('/error', route.resolve('error'))
             .otherwise({ redirectTo: '/error' });
     });
+
+
+
+
 
     return app;
 

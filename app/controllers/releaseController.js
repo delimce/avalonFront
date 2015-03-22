@@ -1,7 +1,7 @@
 'use strict';
 define(['app'], function (app) {
 
-    var controllerId = 'homeController';
+    var controllerId = 'releaseController';
 
     app.register.controller(controllerId, controller);
 
@@ -13,22 +13,16 @@ define(['app'], function (app) {
         // Bindable properties and function are places on vm.
         av.title = controllerId;
 
+        av.subtitleEfect = function(){
 
-        av.tittle1 = "maybe we didn't invent the wheel...,  ...but, we have so much fun remake it!"
-        av.tittle2 = "minimalist, powerful and scalable php mvc framework, go ahead, surfing with style!!"
-
-
-        av.tittle1Efect = function(){
-
-            $("#tittle1").velocity({
+            $("#subtitle").velocity({
                 /* Two-item array format. */
-                translateX: [ 0, 300 ],
+                translateX: [ 0, 200 ],
                 /* Three-item array format with a per-property easing. */
                 opacity: [ 1, "easeInSine", 0 ]
             });
 
         };
-
 
     }
 

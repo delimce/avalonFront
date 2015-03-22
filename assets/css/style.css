@@ -4,12 +4,14 @@ body {
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 .big_tittle {
     text-anchor: 22;
     color: #c9e2b3;
-    width: 45%;
+    width: 54%;
+
     font-size: 49px;
     text-shadow: 3px 3px 3px #000;
 }
@@ -25,14 +27,27 @@ body {
 .panel{
     padding: 7px 6px 7px 15px;
     font-stretch: inherit;
-    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
     font-size: 11pt;
 
 }
 
 footer{
     color: #ffffff;
-    font-weight: bold;
     font-size: 12pt;
     text-align: center;
+    margin-top: 10px;
+}
+
+aside{
+
+    padding: 18px 28px 20px 28px;
+    border: 2px transparent;
+    border-radius: 10px;
+    background:rgb(220,220,220);
+    background: transparent\9;
+    background:rgba(220,220,220,0.8);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#66000000,endColorstr=#66000000);
+    zoom: 1;
+    text-align: justify;
+    font-size: 11pt;
 }
