@@ -31,7 +31,7 @@ define(['angular', 'ngRoute', 'ngBootstrap', 'velocity', 'services/routeResolver
         $routeProvider
             .when('/', route.resolve('home'))
             .when('/release', route.resolve('release'))
-            .when('/page2', route.resolve('page2'))
+            .when('/download', route.resolve('download'))
             .when('/error', route.resolve('error'))
             .otherwise({ redirectTo: '/error' });
     });

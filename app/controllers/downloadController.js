@@ -14,6 +14,16 @@ define(['app'], function (app) {
         av.title = controllerId;
 
 
+        av.subtitleEfect = function(){
+
+            $("#subtitle").velocity({
+                /* Two-item array format. */
+                translateX: [ 0, 200 ],
+                /* Three-item array format with a per-property easing. */
+                opacity: [ 1, "easeInSine", 0 ]
+            });
+
+        };
 
     }
 
